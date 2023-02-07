@@ -24,4 +24,39 @@ Branch main set up to track remote branch main from origin.
 #working on a team with multiple pushing to remote repo
 #push to remote repo from a different machine
 #public github project with another contributor
-made cahgne to file onGitHub.com
+made change to file onGitHub.com
+
+$ git fetch
+#will fetch the commits from remote repo containing tracked remote branch
+
+$ git fetch
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 1), reused 0 (delta 0)
+Unpacking objects: 100% (3/3), done.
+From https://github.com/joesmith2444/my-first-repository
+   5afaf12..9389be5  main     -> origin/main
+#see messages related to git downloading changes, if none, no changes were made
+
+$ git diff main origin/main
+#to view what was changed
+
+$ git diff main origin/main
+diff --git a/README.md b/README.md
+index 0647d92..56289ec 100644
+--- a/README.md
++++ b/README.md
+@@ -1,0 +2,4 @@
++
++This is my first GitHub Repository!
++
++Here is some more text.
+#output - shows changes
+#command tells git to compare main branches of local and remote repo
+
+$ git diff origin/main main
+#compares modified local to original remote repo - order of repos for out of git diff important
+#the '+' represents added lines, the '-' represents deleted lines from the first specified repo
+
+$ git pull --ff-only
+#commits pulled and merged onto current local repo
