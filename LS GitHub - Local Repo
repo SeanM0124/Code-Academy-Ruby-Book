@@ -1,0 +1,20 @@
+$ git status
+#showing working tree and staging area, new files to commit to repo
+
+git add.gitignore READme.md LICENSE.md
+#stages the 3 files, furhter changes requrie furhter staging and included in next commit
+
+git commit -m 'Add First priject files'
+#first repo commit
+
+git log
+#commit history in my repo
+
+git status 
+#run to check status of files in git repo
+git add
+#stages files, readying to wrap into a commit
+git commit
+#commits staged files, wrapping into a commit
+git log
+#view repo commit history
