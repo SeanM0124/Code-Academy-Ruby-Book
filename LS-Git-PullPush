@@ -1,0 +1,27 @@
+#push code to Github from local -> remote repo
+git push -u origin main
+# -u sets default upstream repo - remote repo intended for default push/pull etc
+
+$ git push -u origin main
+Username for 'https://github.com':
+#login prompt for push
+
+$ git push -u origin main
+Username for 'https://github.com': joesmith2444
+Password for 'https://joesmith2444@example.com':
+Counting objects: 5, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (5/5), 368 bytes | 0 bytes/s, done.
+Total 5 (delta 0), reused 0 (delta 0)
+To https://github.com/joesmith2444/my-first-repository.git
+ * [new branch]      main -> main
+Branch main set up to track remote branch main from origin.
+#successful login, message stating objects have been written, and htat local branch is tracking the remote branch (-u flag)
+
+#pull code to local from remote repo
+#necessary when;
+#working on a team with multiple pushing to remote repo
+#push to remote repo from a different machine
+#public github project with another contributor
+made cahgne to file onGitHub.com
