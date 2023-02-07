@@ -1,0 +1,6 @@
+#master and main are the default branch of a new repo
+#branches are made by forking from another existing branch
+#can merge commits from experimental branch
+#branches can exist on local and remote repo
+#local branches can be set up to trach remote branches - auto pull and push code
+#
