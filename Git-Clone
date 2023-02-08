@@ -1,0 +1,26 @@
+git clone
+#makes and exact clone of existing remote repo, copies onto your local machine, everything associated with that git repo
+
+$ git clone <remote repo url> <local directory name>
+#the basic usage command of git clone
+
+$ git clone https://github.com/bob/example.git my_amazing_project
+Cloning into 'my_amazing_project'...
+remote: Counting objects: 218, done.
+remote: Total 218 (delta 0), reused 0 (delta 0)
+Receiving objects: 100% (218/218), 180.21 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (54/54), done.
+Checking connectivity... done.
+$ ls
+my_amazing_project/
+#what happened;
+#new local git repo was created called "my_amazing_project"
+#all contents in the remote repo were donwloaded into new local repo
+#a remote was added to local repo config, pointing to url (origin)
+
+#use git clone when working with remote repo but no local repo is created - new projects etc
+#pull open source projects
+
+#git init - creates new local repo
+#git remote add origin REMOTEURL - add an existing remote repo as a remote of an existing local repo
+# git clone REMOTEURL - pull down contents of remote repo into new local repo, add remote rep to local repo pointing to remote repo
